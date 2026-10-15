@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lbl_n1 = new System.Windows.Forms.Label();
             this.lbl_n2 = new System.Windows.Forms.Label();
             this.lbl_n3 = new System.Windows.Forms.Label();
@@ -37,7 +39,14 @@
             this.chk_n1 = new System.Windows.Forms.CheckBox();
             this.nud_n1 = new System.Windows.Forms.NumericUpDown();
             this.btn_n1 = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pcb_n2 = new System.Windows.Forms.PictureBox();
+            this.pcb_n1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nud_n1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_n2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_n1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_n1
@@ -138,11 +147,52 @@
             this.btn_n1.UseVisualStyleBackColor = true;
             this.btn_n1.Click += new System.EventHandler(this.btn_n1_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.imageList1.Images.SetKeyName(0, "wifi (no ip).png");
+            this.imageList1.Images.SetKeyName(1, "Screenshot 2026-10-11 203314.png");
+            this.imageList1.Images.SetKeyName(2, "Screenshot 2026-10-09 222151.png");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::esercizio_hotel.Properties.Resources.hotel3;
+            this.pictureBox1.Location = new System.Drawing.Point(805, 595);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(340, 204);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pcb_n2
+            // 
+            this.pcb_n2.Image = global::esercizio_hotel.Properties.Resources.hotel2;
+            this.pcb_n2.Location = new System.Drawing.Point(805, 322);
+            this.pcb_n2.Name = "pcb_n2";
+            this.pcb_n2.Size = new System.Drawing.Size(340, 220);
+            this.pcb_n2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb_n2.TabIndex = 12;
+            this.pcb_n2.TabStop = false;
+            // 
+            // pcb_n1
+            // 
+            this.pcb_n1.Image = global::esercizio_hotel.Properties.Resources.hotel1;
+            this.pcb_n1.Location = new System.Drawing.Point(805, 35);
+            this.pcb_n1.Name = "pcb_n1";
+            this.pcb_n1.Size = new System.Drawing.Size(340, 232);
+            this.pcb_n1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcb_n1.TabIndex = 11;
+            this.pcb_n1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1034, 826);
+            this.ClientSize = new System.Drawing.Size(1162, 826);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pcb_n2);
+            this.Controls.Add(this.pcb_n1);
             this.Controls.Add(this.btn_n1);
             this.Controls.Add(this.nud_n1);
             this.Controls.Add(this.chk_n1);
@@ -155,6 +205,9 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.nud_n1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_n2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcb_n1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,6 +224,10 @@
         private System.Windows.Forms.CheckBox chk_n1;
         private System.Windows.Forms.NumericUpDown nud_n1;
         private System.Windows.Forms.Button btn_n1;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.PictureBox pcb_n1;
+        private System.Windows.Forms.PictureBox pcb_n2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
