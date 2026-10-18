@@ -17,7 +17,8 @@ namespace esercizio_hotel
         public Form1()
         {
             InitializeComponent();
-            
+
+            groupBox1.Visible = false;
         }
 
         private void btn_n1_Click(object sender, EventArgs e)
@@ -89,6 +90,11 @@ namespace esercizio_hotel
             // tariffa parcheggio
 
             MessageBox.Show($"Il prezzo totale è: {prezzo} €", "Riepilogo Prezzo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btn_info_Click(object sender, EventArgs e)
+        {
+           groupBox1.Visible = !groupBox1.Visible;
         }
     }
 }
